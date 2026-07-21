@@ -2,6 +2,9 @@ package hei.school.todos.rest;
 
 import hei.school.todos.mapper.TodoMapper;
 import hei.school.todos.model.Todo;
+import hei.school.todos.rest.dto.TodoRequest;
+import hei.school.todos.rest.dto.TodoResponse;
+import hei.school.todos.rest.validation.ValidUUID;
 import hei.school.todos.service.TodoService;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotBlank;
