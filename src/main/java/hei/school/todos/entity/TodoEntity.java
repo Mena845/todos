@@ -17,7 +17,7 @@ public class TodoEntity {
     @Column(length = 1000)
     private String description;
 
-    @Column( nullable = false)
+    @Column(name = "is_completed", nullable = false)
     private boolean completed;
 
     @Column( nullable = false, updatable = false)
