@@ -8,26 +8,25 @@ import java.time.OffsetDateTime;
 public class TodoEntity {
 
     @Id
-    @Column(name = "id", nullable = false, updatable = false)
+    @Column( nullable = false, updatable = false)
     private String id;
 
-    @Column(name = "title", nullable = false, length = 255)
+    @Column( nullable = false, length = 255)
     private String title;
 
-    @Column(name = "description")
+    @Column(length = 1000)
     private String description;
 
-    @Column(name = "is_completed", nullable = false)
+    @Column( nullable = false)
     private boolean completed;
 
-    @Column(name = "created_at", nullable = false, updatable = false)
+    @Column( nullable = false, updatable = false)
     private OffsetDateTime createdAt;
 
-    @Column(name = "updated_at", nullable = false)
+    @Column( nullable = false)
     private OffsetDateTime updatedAt;
 
-    protected TodoEntity() {
-        // requis par JPA
+    public TodoEntity() {
     }
 
     public TodoEntity(String id, String title, String description, boolean completed,
